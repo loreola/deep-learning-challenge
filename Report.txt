@@ -1,0 +1,22 @@
+﻿Alphabet Soup Report
+
+
+1. Overview of the analysis:
+The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
+2. Results: Using bulleted lists and images to support your answers, address the following questions:
+* Data Preprocessing
+   * What variable(s) are the target(s) for your model? 
+* ‘IS_SUCCESSFUL’  column from application_df is the target variable.
+   * What variable(s) are the features for your model?
+* Every other column from application_df.
+   * What variable(s) should be removed from the input data because they are neither targets nor features?
+* ‘EIN’ and ‘NAME’ were removed because they were neither targets nor features.
+* Compiling, Training, and Evaluating the Model
+   * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* In the first attempt I used 8 hidden nodes and on the second one 5.
+   * Were you able to achieve the target model performance?
+* I was able to achieve 75% model accuracy performance. 
+   * What steps did you take in your attempts to increase model performance?
+* Layers were added as well as removal of columns. Additional hidden nodes to achieve a higher model accuracy.
+3. Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+In general, the deep learning model exhibited a 75% accuracy rate when predicting the classification problem. Enhancing the correlation between input and output in the model is likely to yield improved prediction accuracy. This improvement can be realized through thorough upfront data cleanup and the utilization of a model employing diverse activation functions, with iterations conducted until a higher level of accuracy is attained.
